@@ -6,6 +6,7 @@
 with hashData as (
   select HASHBYTES('MD5', concat(cast(COMMENTS as varchar),'|',cast(BidderStatusID as varchar))) as hashValue,CURRENT_TIMESTAMP as effectiveTime, * from DBT_Auct_Bidder_Source
 )
+
 select * from hashData
 {% if is_incremental() %}
 

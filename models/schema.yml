@@ -1,6 +1,0 @@
-
-version: 2
-
-models:
-  - name: DBT_Auct_Bidder_Target
-    description: "A starter dbt model"
